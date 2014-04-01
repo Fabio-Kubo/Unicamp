@@ -1,0 +1,33 @@
+package prodPlan;
+
+public abstract class Parte {
+
+	protected int cod;
+	protected String nome;
+	protected String descricao;
+	protected float valor;
+
+	public Parte(int cod, String nome, String descricao, float valor) {
+
+		this.cod = cod;
+		this.nome = nome;
+		this.descricao = descricao;
+		this.valor = valor;
+	}
+
+	public float calculaValor() {
+
+		return this.valor;
+	}
+
+	public String toString() {
+		
+		StringBuilder stb = new StringBuilder();
+		
+
+		String formato = "codigo:%d nome:%s descrição:%s valor:%f";
+		return String.format(formato, this.cod, this.nome, this.descricao,
+				this.valor);
+	}
+
+}

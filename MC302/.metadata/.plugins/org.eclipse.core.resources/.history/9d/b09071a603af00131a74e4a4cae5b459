@@ -1,0 +1,33 @@
+package prodPlan;
+
+import java.util.List;
+
+public class ParteComposta extends Parte {
+
+	protected List<Item> itens;
+	
+	
+	public ParteComposta(int cod, String nome, String descricao, float valor) {
+		super(cod, nome, descricao, valor);
+	}
+	
+	private Boolean existeParte(Parte parte){
+		
+		for (int i = 0; i < itens.size(); i++) {
+			
+			if()
+		}
+	}
+	
+	public void agregaItem(Parte parte, int quantidade) throws Exception{
+		
+		if(parte == null)
+			throw new RuntimeException("A parte não pode ser nula.");
+		
+		if(itens != null && existeParte(parte))
+			throw new RuntimeException("A parte já foi adicionada.");
+		
+		if(quantidade == 0)
+			throw new RuntimeException("Quantidade não deve ser nula.");
+	}
+}

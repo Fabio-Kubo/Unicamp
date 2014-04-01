@@ -1,0 +1,25 @@
+package prodPlan;
+
+public class Item {
+	
+	protected Parte parte;
+	protected int quantidade;
+	
+	public Item(Parte parte, int quantidade) {
+		
+		this.parte = parte;
+		this.quantidade = quantidade;
+	}
+	
+	public float calculaValor(){
+		
+		return this.parte.calculaValor() * this.quantidade;
+	}
+	
+	public String toString(){
+		
+		String formato = "cod:{0} nome:{1} quantidade:{2} valor unitário:{3} valor:{4}";
+		return String.format(format, this.parte.cod, this.parte.nome, this.calculaValor());
+	}
+
+}

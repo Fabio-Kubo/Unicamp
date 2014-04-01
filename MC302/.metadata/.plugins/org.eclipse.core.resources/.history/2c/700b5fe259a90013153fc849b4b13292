@@ -1,0 +1,16 @@
+package mc302;
+
+public class Parafuso extends Parte {
+
+	private float comprimento;
+	private float diametro;
+
+	public Parafuso(int cod, String nome, String descricao, float valor,
+			float comprimento, float diametro) {
+
+		super(cod, nome, descricao, valor);
+		this.comprimento = comprimento;
+		this.diametro = diametro;
+	}
+
+}

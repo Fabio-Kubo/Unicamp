@@ -1,0 +1,20 @@
+package prodPlan;
+
+public class ParteEspecifica extends Parte {
+
+	public ParteEspecifica(int cod, String nome, String descricao, float valor) {
+		super(cod, nome, descricao, valor);
+		// TODO Auto-generated constructor stub
+	}
+
+	public String caracteristica(String nome){
+		
+		
+	}
+	
+	public void agregaCaracteristica(String nome, String conteudo)
+			throws Exception {
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package prodPlan;
+
+public class Item {
+
+	public Item(Parte parte, int quantidade) {
+		
+		this.parte = parte;
+		this.quantidade = quantidade;
+	}
+	private Parte parte;
+	private int quantidade;
+
+}

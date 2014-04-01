@@ -1,0 +1,8 @@
+package mc302;
+
+public class Item {
+
+	private Parte parte;
+	private int quantidade;
+
+}

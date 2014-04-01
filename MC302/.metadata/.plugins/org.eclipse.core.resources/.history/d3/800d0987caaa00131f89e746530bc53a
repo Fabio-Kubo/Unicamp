@@ -1,0 +1,16 @@
+package prodPlan;
+
+public class Item {
+	
+	private Parte parte;
+	private int quantidade;
+	
+	public Item(Parte parte, int quantidade) {
+		
+		this.parte = parte;
+		this.quantidade = quantidade;
+	}
+	
+	public float calculaValor();
+
+}

@@ -1,0 +1,25 @@
+package prodPlan;
+
+public class Motor extends Parte {
+
+	protected float potencia;
+	protected float corrente;
+	protected int rpm;
+
+	public Motor(int cod, String nome, String descricao, float valor,
+			float potencia, float corrente, int rpm) {
+
+		super(cod, nome, descricao, valor);
+		this.potencia = potencia;
+		this.corrente = corrente;
+		this.rpm = rpm;
+	}
+	
+	public String toString(){
+		
+		String formato = " potencia:%f corrente:%f rpm:%d";	
+		
+		return super.toString() + String.format(formato, this.potencia, this.corrente, this.rpm);
+	}
+
+}

@@ -1,0 +1,7 @@
+package prodPlan;
+
+public class Caracteristica {
+	
+	protected String nome;
+	protected String caracteristica;
+}

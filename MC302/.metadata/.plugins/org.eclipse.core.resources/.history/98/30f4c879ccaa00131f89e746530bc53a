@@ -1,0 +1,24 @@
+package prodPlan;
+
+public class Parafuso extends Parte {
+
+	private float comprimento;
+	private float diametro;
+
+	public Parafuso(int cod, String nome, String descricao, float valor,
+			float comprimento, float diametro) {
+
+		super(cod, nome, descricao, valor);
+		this.comprimento = comprimento;
+		this.diametro = diametro;
+	}
+
+	public String toString() {
+
+		String formato = " comprimento:{0} diametro:{1}";
+
+		return super.toString()
+				+ String.format(formato, this.comprimento, this.diametro);
+	}
+
+}

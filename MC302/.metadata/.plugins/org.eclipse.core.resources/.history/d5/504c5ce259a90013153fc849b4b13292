@@ -1,0 +1,28 @@
+package mc302;
+
+public abstract class Parte {
+
+	private int cod;
+	private String nome;
+	private String descricao;
+	private float valor;
+
+	public Parte(int cod, String nome, String descricao, float valor) {
+
+		this.cod = cod;
+		this.nome = nome;
+		this.descricao = descricao;
+		this.valor = valor;
+	}
+
+	public float calculaValor() {
+
+		return this.valor;
+	}
+
+	public String toString() {
+
+		return null;
+	}
+
+}
