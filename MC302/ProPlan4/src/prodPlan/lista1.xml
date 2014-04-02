@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<lista>
+  <item quantidade='1' >
+    <parteComposta cod='1021' nome='base fixa bf1' descricao='base fixa de uso geral' valor='20.0' >
+      <item quantidade='4' >
+        <parafuso cod='231' nome='parafuso p1' descricao='parafuso de fixacao do cabecote' valor='2.5'  comprimento='100.0' diametro='8.0' />
+      </item>
+      <item quantidade='2' >
+        <parafuso cod='232' nome='parafuso p2' descricao='parafuso de fixacao do motor' valor='2.5'  comprimento='80.0' diametro='6.0' />
+      </item>
+      <item quantidade='3' >
+        <parafuso cod='233' nome='parafuso p3' descricao='parafuso de fixacao do ventilador' valor='2.0'  comprimento='60.0' diametro='6.0' />
+      </item>
+      <item quantidade='4' >
+        <parteEspecifica cod='321' nome='haste h1' descricao='haste de uso geral 1' valor='4.0' >
+          <caracteristica nome='espessura' conteudo='12'/>
+          <caracteristica nome='largura' conteudo='45'/>
+          <caracteristica nome='comprimento' conteudo='500'/>
+        </parteEspecifica>
+      </item>
+      <item quantidade='2' >
+        <parteEspecifica cod='322' nome='haste h2' descricao='haste de uso geral 2' valor='3.0' >
+          <caracteristica nome='espessura' conteudo='12'/>
+          <caracteristica nome='largura' conteudo='45'/>
+          <caracteristica nome='comprimento' conteudo='600'/>
+        </parteEspecifica>
+      </item>
+      <item quantidade='2' >
+        <parteEspecifica cod='511' nome='placa pk1' descricao='placa principal' valor='6.0' >
+          <caracteristica nome='espessura' conteudo='3'/>
+          <caracteristica nome='largura' conteudo='450'/>
+          <caracteristica nome='comprimento' conteudo='500'/>
+        </parteEspecifica>
+      </item>
+    </parteComposta>
+  </item>
+  <item quantidade='1' >
+    <parteComposta cod='1022' nome='base giratoria bgx' descricao='base giratoria de uso geral' valor='25.0' >
+      <item quantidade='2' >
+        <parafuso cod='232' nome='parafuso p2' descricao='parafuso de fixacao do motor' valor='2.5'  comprimento='80.0' diametro='6.0' />
+      </item>
+      <item quantidade='4' >
+        <parafuso cod='231' nome='parafuso p1' descricao='parafuso de fixacao do cabecote' valor='2.5'  comprimento='100.0' diametro='8.0' />
+      </item>
+      <item quantidade='1' >
+        <parteEspecifica cod='401' nome='eixo e1' descricao='eixo basico 1' valor='6.0' >
+          <caracteristica nome='comprimento' conteudo='350'/>
+          <caracteristica nome='diametro' conteudo='45'/>
+        </parteEspecifica>
+      </item>
+      <item quantidade='1' >
+        <motor cod='112' nome='motor m112' descricao='motor de avanco do cabecote' valor='100.0' potencia = '1.2' corrente='1.1' rpm='1250' />
+      </item>
+      <item quantidade='2' >
+        <parteEspecifica cod='321' nome='haste h1' descricao='haste de uso geral 1' valor='4.0' >
+          <caracteristica nome='espessura' conteudo='12'/>
+          <caracteristica nome='largura' conteudo='45'/>
+          <caracteristica nome='comprimento' conteudo='500'/>
+        </parteEspecifica>
+      </item>
+      <item quantidade='1' >
+        <parteEspecifica cod='511' nome='placa pk1' descricao='placa principal' valor='6.0' >
+          <caracteristica nome='espessura' conteudo='3'/>
+          <caracteristica nome='largura' conteudo='450'/>
+          <caracteristica nome='comprimento' conteudo='500'/>
+        </parteEspecifica>
+      </item>
+      <item quantidade='2' >
+        <parteEspecifica cod='512' nome='placa pk2' descricao='placa auxiliar' valor='4.0' >
+          <caracteristica nome='obs' conteudo='recorte especial'/>
+          <caracteristica nome='espessura' conteudo='3'/>
+          <caracteristica nome='largura' conteudo='320'/>
+          <caracteristica nome='comprimento' conteudo='400'/>
+        </parteEspecifica>
+      </item>
+    </parteComposta>
+  </item>
+  <item quantidade='1' >
+    <parteComposta cod='2043' nome='plataforma p1' descricao='plataforma principal' valor='48.0' >
+      <item quantidade='2' >
+        <parafuso cod='231' nome='parafuso p1' descricao='parafuso de fixacao do cabecote' valor='2.5'  comprimento='100.0' diametro='8.0' />
+      </item>
+      <item quantidade='4' >
+        <parafuso cod='232' nome='parafuso p2' descricao='parafuso de fixacao do motor' valor='2.5'  comprimento='80.0' diametro='6.0' />
+      </item>
+      <item quantidade='2' >
+        <parteComposta cod='1021' nome='base fixa bf1' descricao='base fixa de uso geral' valor='20.0' >
+          <item quantidade='4' >
+            <parafuso cod='231' nome='parafuso p1' descricao='parafuso de fixacao do cabecote' valor='2.5'  comprimento='100.0' diametro='8.0' />
+          </item>
+          <item quantidade='2' >
+            <parafuso cod='232' nome='parafuso p2' descricao='parafuso de fixacao do motor' valor='2.5'  comprimento='80.0' diametro='6.0' />
+          </item>
+          <item quantidade='3' >
+            <parafuso cod='233' nome='parafuso p3' descricao='parafuso de fixacao do ventilador' valor='2.0'  comprimento='60.0' diametro='6.0' />
+          </item>
+          <item quantidade='4' >
+            <parteEspecifica cod='321' nome='haste h1' descricao='haste de uso geral 1' valor='4.0' >
+              <caracteristica nome='espessura' conteudo='12'/>
+              <caracteristica nome='largura' conteudo='45'/>
+              <caracteristica nome='comprimento' conteudo='500'/>
+            </parteEspecifica>
+          </item>
+          <item quantidade='2' >
+            <parteEspecifica cod='322' nome='haste h2' descricao='haste de uso geral 2' valor='3.0' >
+              <caracteristica nome='espessura' conteudo='12'/>
+              <caracteristica nome='largura' conteudo='45'/>
+              <caracteristica nome='comprimento' conteudo='600'/>
+            </parteEspecifica>
+          </item>
+          <item quantidade='2' >
+            <parteEspecifica cod='511' nome='placa pk1' descricao='placa principal' valor='6.0' >
+              <caracteristica nome='espessura' conteudo='3'/>
+              <caracteristica nome='largura' conteudo='450'/>
+              <caracteristica nome='comprimento' conteudo='500'/>
+            </parteEspecifica>
+          </item>
+        </parteComposta>
+      </item>
+      <item quantidade='4' >
+        <parteEspecifica cod='321' nome='haste h1' descricao='haste de uso geral 1' valor='4.0' >
+          <caracteristica nome='espessura' conteudo='12'/>
+          <caracteristica nome='largura' conteudo='45'/>
+          <caracteristica nome='comprimento' conteudo='500'/>
+        </parteEspecifica>
+      </item>
+      <item quantidade='2' >
+        <parteEspecifica cod='401' nome='eixo e1' descricao='eixo basico 1' valor='6.0' >
+          <caracteristica nome='comprimento' conteudo='350'/>
+          <caracteristica nome='diametro' conteudo='45'/>
+        </parteEspecifica>
+      </item>
+      <item quantidade='2' >
+        <parteEspecifica cod='402' nome='eixo e2' descricao='eixo basico 2' valor='4.5' >
+          <caracteristica nome='comprimento' conteudo='450'/>
+          <caracteristica nome='diametro' conteudo='30'/>
+        </parteEspecifica>
+      </item>
+      <item quantidade='2' >
+        <parteComposta cod='1022' nome='base giratoria bgx' descricao='base giratoria de uso geral' valor='25.0' >
+          <item quantidade='2' >
+            <parafuso cod='232' nome='parafuso p2' descricao='parafuso de fixacao do motor' valor='2.5'  comprimento='80.0' diametro='6.0' />
+          </item>
+          <item quantidade='4' >
+            <parafuso cod='231' nome='parafuso p1' descricao='parafuso de fixacao do cabecote' valor='2.5'  comprimento='100.0' diametro='8.0' />
+          </item>
+          <item quantidade='1' >
+            <parteEspecifica cod='401' nome='eixo e1' descricao='eixo basico 1' valor='6.0' >
+              <caracteristica nome='comprimento' conteudo='350'/>
+              <caracteristica nome='diametro' conteudo='45'/>
+            </parteEspecifica>
+          </item>
+          <item quantidade='1' >
+            <motor cod='112' nome='motor m112' descricao='motor de avanco do cabecote' valor='100.0' potencia = '1.2' corrente='1.1' rpm='1250' />
+          </item>
+          <item quantidade='2' >
+            <parteEspecifica cod='321' nome='haste h1' descricao='haste de uso geral 1' valor='4.0' >
+              <caracteristica nome='espessura' conteudo='12'/>
+              <caracteristica nome='largura' conteudo='45'/>
+              <caracteristica nome='comprimento' conteudo='500'/>
+            </parteEspecifica>
+          </item>
+          <item quantidade='1' >
+            <parteEspecifica cod='511' nome='placa pk1' descricao='placa principal' valor='6.0' >
+              <caracteristica nome='espessura' conteudo='3'/>
+              <caracteristica nome='largura' conteudo='450'/>
+              <caracteristica nome='comprimento' conteudo='500'/>
+            </parteEspecifica>
+          </item>
+          <item quantidade='2' >
+            <parteEspecifica cod='512' nome='placa pk2' descricao='placa auxiliar' valor='4.0' >
+              <caracteristica nome='obs' conteudo='recorte especial'/>
+              <caracteristica nome='espessura' conteudo='3'/>
+              <caracteristica nome='largura' conteudo='320'/>
+              <caracteristica nome='comprimento' conteudo='400'/>
+            </parteEspecifica>
+          </item>
+        </parteComposta>
+      </item>
+      <item quantidade='4' >
+        <parteEspecifica cod='512' nome='placa pk2' descricao='placa auxiliar' valor='4.0' >
+          <caracteristica nome='obs' conteudo='recorte especial'/>
+          <caracteristica nome='espessura' conteudo='3'/>
+          <caracteristica nome='largura' conteudo='320'/>
+          <caracteristica nome='comprimento' conteudo='400'/>
+        </parteEspecifica>
+      </item>
+      <item quantidade='1' >
+        <motor cod='112' nome='motor m112' descricao='motor de avanco do cabecote' valor='100.0' potencia = '1.2' corrente='1.1' rpm='1250' />
+      </item>
+    </parteComposta>
+  </item>
+  <item quantidade='1' >
+    <parteComposta cod='1023' nome='kit de reposicao k1' descricao='kit de reposicao da plataforma p1' valor='0.0' >
+      <item quantidade='4' >
+        <parafuso cod='231' nome='parafuso p1' descricao='parafuso de fixacao do cabecote' valor='2.5'  comprimento='100.0' diametro='8.0' />
+      </item>
+      <item quantidade='6' >
+        <parafuso cod='232' nome='parafuso p2' descricao='parafuso de fixacao do motor' valor='2.5'  comprimento='80.0' diametro='6.0' />
+      </item>
+      <item quantidade='2' >
+        <parteEspecifica cod='321' nome='haste h1' descricao='haste de uso geral 1' valor='4.0' >
+          <caracteristica nome='espessura' conteudo='12'/>
+          <caracteristica nome='largura' conteudo='45'/>
+          <caracteristica nome='comprimento' conteudo='500'/>
+        </parteEspecifica>
+      </item>
+      <item quantidade='2' >
+        <parteEspecifica cod='401' nome='eixo e1' descricao='eixo basico 1' valor='6.0' >
+          <caracteristica nome='comprimento' conteudo='350'/>
+          <caracteristica nome='diametro' conteudo='45'/>
+        </parteEspecifica>
+      </item>
+      <item quantidade='2' >
+        <parteEspecifica cod='402' nome='eixo e2' descricao='eixo basico 2' valor='4.5' >
+          <caracteristica nome='comprimento' conteudo='450'/>
+          <caracteristica nome='diametro' conteudo='30'/>
+        </parteEspecifica>
+      </item>
+      <item quantidade='4' >
+        <parteEspecifica cod='512' nome='placa pk2' descricao='placa auxiliar' valor='4.0' >
+          <caracteristica nome='obs' conteudo='recorte especial'/>
+          <caracteristica nome='espessura' conteudo='3'/>
+          <caracteristica nome='largura' conteudo='320'/>
+          <caracteristica nome='comprimento' conteudo='400'/>
+        </parteEspecifica>
+      </item>
+    </parteComposta>
+  </item>
+</lista>
+
