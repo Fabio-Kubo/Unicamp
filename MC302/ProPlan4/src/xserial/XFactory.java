@@ -1,8 +1,8 @@
 package xserial;
 
 /**
- * Esta interface define o método makeObject() usado para a criação dos
- * objetos à medida em que é feito o processamento do documento XML pelo
+ * Esta interface define o mï¿½todo makeObject() usado para a criaï¿½ï¿½o dos
+ * objetos ï¿½ medida em que ï¿½ feito o processamento do documento XML pelo
  * objeto XParser.
  *
  */

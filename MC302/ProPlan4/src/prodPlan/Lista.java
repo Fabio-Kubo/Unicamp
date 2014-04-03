@@ -5,7 +5,7 @@ package prodPlan;
  * para manter as partes representadas no mesmo
  **/
 
-public class Lista extends ParteComposta {
+public class Lista extends ParteComposta{
 
 	public Lista() {
 

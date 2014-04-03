@@ -1,11 +1,17 @@
 package prodPlan;
 
-public abstract class Parte {
+import xserial.XSerial;
+
+public abstract class Parte implements XSerial {
 
 	protected int cod;
 	protected String nome;
 	protected String descricao;
 	protected float valor;
+
+	public Parte() {
+
+	}
 
 	public Parte(int cod, String nome, String descricao, float valor) {
 
@@ -33,6 +39,27 @@ public abstract class Parte {
 		stb.append(this.valor);
 
 		return stb.toString();
+	}
+
+	@Override
+	public void setAttrib(String name, String value) {
+
+		if (name.equals("cod")) {
+			this.cod = Integer.parseInt(value);
+		} else if (name.equals("nome")) {
+			this.nome = value;
+		} else if (name.equals("descricao")) {
+			this.descricao = value;
+		} else if (name.equals("valor")) {
+			this.valor = Float.parseFloat(value);
+		}
+
+	}
+
+	@Override
+	public void setText(char[] chars, int start, int length) {
+		// TODO Auto-generated method stub
+
 	}
 
 }

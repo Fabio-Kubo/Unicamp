@@ -43,8 +43,8 @@ public class TesteLab4_1 {
 		
 		// Escreve a lista (mais ou menos) formatada na sa�da padr�o
 		System.out.println("\t CODIGO\t    QUANTIDADE \tVALOR  \t\t NOME/DESCRICAO");
-		imprimeLista(lista.itens,0);
-		imprimeTotal(lista.itens);
+		imprimeLista(lista.listaDeItens(),0);
+	    imprimeTotal(lista.listaDeItens());
 	    System.out.println("FIM");
 
 	}

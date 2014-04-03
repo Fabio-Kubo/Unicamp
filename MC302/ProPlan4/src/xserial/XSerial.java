@@ -1,8 +1,8 @@
 package xserial;
 
 /**
- * Esta interface define os métodos a ser implementados pelas classes dos objetos
- * construídos durante o processamento do documento XML.
+ * Esta interface define os mï¿½todos a ser implementados pelas classes dos objetos
+ * construï¿½dos durante o processamento do documento XML.
  *
  */
 
@@ -11,6 +11,7 @@ public interface XSerial {
 	/**
 	 * Associa resultante de uma 'tag filha' a este objeto.
 	 * @param obj
+	 * @throws Exception 
 	 */
 	public void setObject(XSerial obj);
 	

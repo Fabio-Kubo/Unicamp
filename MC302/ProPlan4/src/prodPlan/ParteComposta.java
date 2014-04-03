@@ -3,9 +3,16 @@ package prodPlan;
 import java.util.LinkedList;
 import java.util.List;
 
-public class ParteComposta extends Parte {
+import xserial.*;
 
-	private List<Item> itens;
+public class ParteComposta extends Parte{
+
+	public List<Item> itens;
+	
+	public ParteComposta(){
+		
+		itens = new LinkedList<Item>();
+	}
 
 	public ParteComposta(int cod, String nome, String descricao, float valor) {
 		super(cod, nome, descricao, valor);
@@ -53,4 +60,12 @@ public class ParteComposta extends Parte {
 
 		return super.toString();
 	}
+
+	@Override
+	public void setObject(XSerial obj) {
+		if(obj instanceof Item)
+			this.itens.add((Item)obj);
+		
+	}
+
 }

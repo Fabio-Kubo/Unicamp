@@ -1,9 +1,14 @@
 package prodPlan;
+import xserial.*;
 
-public class Item {
+public class Item implements XSerial {
 
 	protected Parte parte;
 	protected int quantidade;
+
+	public Item() {
+
+	}
 
 	public Item(Parte parte, int quantidade) {
 
@@ -29,6 +34,27 @@ public class Item {
 		stb.append(this.calculaValor());
 
 		return stb.toString();
+	}
+
+	@Override
+	public void setObject(XSerial obj) {
+
+		if (obj instanceof Parte)
+			this.parte = (Parte) obj;
+	}
+
+	@Override
+	public void setAttrib(String name, String value) {
+
+		if (name.equals("quantidade")) {
+			this.quantidade = Integer.parseInt(value);
+		}
+	}
+
+	@Override
+	public void setText(char[] chars, int start, int length) {
+		// TODO Auto-generated method stub
+
 	}
 
 }
