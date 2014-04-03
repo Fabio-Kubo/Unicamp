@@ -8,7 +8,8 @@ public class Caracteristica implements XSerial {
 	protected String conteudo;
 
 	public Caracteristica() {
-
+		this.nome = "";
+		this.conteudo = "";
 	}
 
 	public Caracteristica(String nome, String conteudo) {

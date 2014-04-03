@@ -11,17 +11,24 @@ public class MyFactory implements XFactory {
 	@Override
 	public XSerial makeObject(String name, XSerial upperObj) {
 
-		switch(name){
-			
-			case "item" : return new Item();
-			case "parafuso": return new Parafuso();
-			case "motor" : return new Motor();
-			case "parteComposta": return new ParteComposta();
-			case "parteEspecifica": return new ParteEspecifica();
-			case "caracteristica": return new Caracteristica();
-			case "lista": return new Lista();
-			default: return null;
+		if (name.equals("item")) {
+			return new Item();
+		} else if (name.equals("parafuso")) {
+			return new Parafuso();
+		} else if (name.equals("motor")) {
+			return new Motor();
+		} else if (name.equals("parteComposta")) {
+			return new ParteComposta();
+		} else if (name.equals("parteEspecifica")) {
+			return new ParteEspecifica();
+		} else if (name.equals("caracteristica")) {
+			return new Caracteristica();
+		} else if (name.equals("lista")) {
+			return new Lista();
+		} else {
+			return null;
 		}
+
 	}
 
 }
