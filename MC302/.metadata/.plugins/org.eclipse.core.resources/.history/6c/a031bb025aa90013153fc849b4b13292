@@ -1,8 +1,0 @@
-package prodPlan;
-
-public class Item {
-
-	private Parte parte;
-	private int quantidade;
-
-}
