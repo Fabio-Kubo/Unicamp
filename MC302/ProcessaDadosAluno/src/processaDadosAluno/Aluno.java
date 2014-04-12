@@ -4,18 +4,16 @@ public class Aluno {
 	
 	private String nome;
 	private String rg;
-	private String pontuacao;
 	private String curso;	
 	
 	public Aluno(){
 		
 	}
 	
-	public Aluno(String nome, String rg, String pontuacao, String curso){
+	public Aluno(String nome, String rg, String curso){
 		
 		setNome(nome);
 		setRg(rg);
-		setPontuacao(pontuacao);
 		setCurso(curso);
 	}
 	
@@ -42,12 +40,4 @@ public class Aluno {
 	public void setCurso(String curso) {
 		this.curso = curso;
 	}
-	
-	public String getPontuacao() {
-		return pontuacao;
-	}
-	
-	public void setPontuacao(String pontuacao) {
-		this.pontuacao = pontuacao;
-	}	
 }
