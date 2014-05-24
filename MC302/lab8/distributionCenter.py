@@ -49,7 +49,7 @@ def calculaCustoDistribuicao(cidades, matrizDistancias):
 	for cidade in cidades:
 		for cidadeB in cidades:
 			if cidade != cidadeB:
-				cidade.custoDistribuicao = matrizDistancias[len(cidades)][((Cidade)cidade).id][cidadeB.id] * cidadeB.capacidade
+				cidade.custoDistribuicao = matrizDistancias[len(cidades)][cidade.id][cidadeB.id] * cidadeB.capacidade
 
 def imprimeMatriz(matriz):
 	n = 31
@@ -59,6 +59,13 @@ def imprimeMatriz(matriz):
 				print matriz[k][j][i],
 		print ' '
 
+def imprimiResultado(cidades):
+
+	for cidade in cidades:
+		print '[' + cidade.nome + ', '+ cidade.capacidade + ', ' + cidade.custoDistribuicao + ']'
+	print 'melhor ponto: ' + 'falta' + ' custo: ' + 80040
+	print 'maior custo: ' + 'falta' + ' custo: ' + 235413
+
 def main():
 
 	cidades = {}
@@ -67,6 +74,6 @@ def main():
 	matrizDistancias = carregaDistancias(arqEntrada, len(cidades)) # carrega as distancias
 	calculaMenorCaminho(matrizDistancias, len(cidades))
 	calculaCustoDistribuicao(cidades, matrizDistancias)
-	imprimeMatriz(matrizDistancias)
+	imprimiResultado(cidades)
 
 main()
