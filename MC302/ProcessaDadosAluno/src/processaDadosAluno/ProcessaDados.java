@@ -14,6 +14,8 @@ public class ProcessaDados {
 					"alunos.csv"));
 
 			String linha;
+			
+			//Contadores
 			HashMap<String, Integer> nomeQtd = new HashMap<String, Integer>();
 			HashMap<String, Integer> rgQtd = new HashMap<String, Integer>();
 			HashMap<String, Integer> cursoQtd = new HashMap<String, Integer>();
@@ -30,11 +32,13 @@ public class ProcessaDados {
 				atualizaContadorCurso(cursoQtd,
 						l[PropriedadeAluno.CURSO.getCode()]);
 			}
-
+			
+			//Exibe os relatorios
 			exibirRelatorioNomesRepetidos(nomeQtd);
 			exibirRelatorioRgRepetidos(rgQtd);
 			exibirRelatorioQuantidadePorCurso(cursoQtd);
 
+			//fecha o arquivo
 			leitor.close();
 
 		} catch (IOException e) {
@@ -42,6 +46,9 @@ public class ProcessaDados {
 		}
 	}
 
+	/*
+	 * Metodo que exibe as quantidades de pessoas por curso
+	 * */
 	private static void exibirRelatorioQuantidadePorCurso(
 			HashMap<String, Integer> cursoQtd) {
 		System.out.println("\nQuantidade por curso:");
@@ -52,6 +59,9 @@ public class ProcessaDados {
 		}
 	}
 
+	/*
+	 * Metodo que exibe os rgs repetidos
+	 * */
 	private static void exibirRelatorioRgRepetidos(
 			HashMap<String, Integer> rgQtd) {
 		System.out.println("\nRgs repetidos:");
@@ -61,7 +71,11 @@ public class ProcessaDados {
 			}			
 		}
 	}
-
+	
+	
+	/*
+	 * Metodo que exibe os nomes repetidos
+	 * */
 	private static void exibirRelatorioNomesRepetidos(
 			HashMap<String, Integer> nomeQtd) {
 		System.out.println("Nomes repetidos:");
@@ -73,6 +87,9 @@ public class ProcessaDados {
 		}
 	}
 
+	/*
+	 * Metodo que atualiza o contador dos cursos
+	 * */
 	private static void atualizaContadorCurso(
 			HashMap<String, Integer> cursoQtd, String curso) {
 
@@ -84,6 +101,9 @@ public class ProcessaDados {
 		}
 	}
 
+	/*
+	 * Metodo que atualiza o contador dos nomes
+	 * */
 	private static void atualizaContadorNome(HashMap<String, Integer> nomeQtd,
 			String nome) {
 		if (nomeQtd.containsKey(nome)) {
@@ -94,6 +114,9 @@ public class ProcessaDados {
 		}
 	}
 
+	/*
+	 * Metodo que atualiza o contador dos rgs
+	 * */
 	private static void atualizaContadorRg(HashMap<String, Integer> rgQtd,
 			String rg) {
 		if (rgQtd.containsKey(rg)) {
