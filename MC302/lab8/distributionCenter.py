@@ -45,7 +45,6 @@ def calculaMenorCaminho(dist, qtdCidade):
 		for i in range(0, qtdCidade):
 			for j in range(0, qtdCidade):
 				dist[i][j] = min( dist[i][j], dist[i][k] + dist[k][j] );
-	imprimeMatriz(dist)
 
 def calculaCustoDistribuicao(cidades, matrizDistancias):
 	for cidade in cidades:
@@ -57,11 +56,11 @@ def calculaCustoDistribuicao(cidades, matrizDistancias):
 
 def imprimiResultado(cidades):
 	for cidade in cidades:
-		print '[' + cidade.nome + ', '+ str(cidade.capacidade) + ', ' + str(cidade.custoDistribuicao) + ']'
+		print "['{0}', {1}, {2}]".format(cidade.nome, cidade.capacidade, cidade.custoDistribuicao)
 	
 	cidades.sort(key=lambda x: x.custoDistribuicao)
-	print 'melhor ponto: ' + cidades[0].nome + ' custo: ' + str(cidades[0].custoDistribuicao)
-	print 'maior custo: ' + cidades[len(cidades) - 1].nome + ' custo: ' + str(cidades[len(cidades) - 1].custoDistribuicao)
+	print 'melhor ponto: {0} custo: {1}'.format(cidades[0].nome, cidades[0].custoDistribuicao)
+	print 'maior custo: {0} custo: {1}'.format(cidades[len(cidades) - 1].nome, cidades[len(cidades) - 1].custoDistribuicao)
 
 def main():
 	cidades = []
@@ -71,12 +70,5 @@ def main():
 	calculaMenorCaminho(matrizDistancias, len(cidades))
 	calculaCustoDistribuicao(cidades, matrizDistancias)
 	imprimiResultado(cidades)
-
-def imprimeMatriz(matriz):
-	n = 31
-	for i in range(0, n):
-		for j in range(0, n):
-			print matriz[i][j],
-		print ' '
 
 main()
