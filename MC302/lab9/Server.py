@@ -130,7 +130,7 @@ def listaNumLimite(nmCidadeOrigem, limite):
 
 	cidadeReferencia = getCidade(nmCidadeOrigem)
 	if cidadeReferencia is None:
-		return "???"
+		return None
 
 	retornoLista = []
 
@@ -148,7 +148,7 @@ matrizDistancias = carregaDistancias(arqEntrada, len(cidades)) # carrega as dist
 calculaMenorCaminho(matrizDistancias, len(cidades))
 calculaCustoDistribuicao(cidades, matrizDistancias)
 
-servidor = SimpleXMLRPCServer(('localhost', 9001), logRequests=True)
+servidor = SimpleXMLRPCServer(('xaveco.lab.ic.unicamp.br', 9001), logRequests=True, allow_none=True)
 
 # registro das funcoes 'publicadas' pelo servidor
 # (toda funcao publicada deve ser registrada)
